@@ -9,7 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <!-- tailwind css CDN link -->
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <!-- fontawesome CDN link -->
+    <script src="https://kit.fontawesome.com/8f0f3e7f4c.js" crossorigin="anonymous"></script>
     <style>
         /* project font setup */
         @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
@@ -21,7 +22,46 @@
 </head>
 
 <body class="font-manrope">
-    <h2 class="text-3xl text-blue-600">Welcome to Hockey Club</h2>
+    <header class="container mx-auto mt-2">
+        <nav class="mb-6 lg:mb-12">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-[#424247] font-normal">
+                            <li class="text-[#FF4240]"><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="text-[#131318] text-2xl lg:text-4xl font-extrabold hover:cursor-pointer">Hockey<span
+                            class="text-[#FF4240]">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-[#424247] font-normal text-base">
+                        <li class="text-[#FF4240]"><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end flex gap-6 items-center text-[#7f7f82]">
+                    <i class="fa-solid fa-magnifying-glass text-xl hidden lg:block md:block hover:cursor-pointer"></i>
+                    <a class="btn text-white bg-[#FF4240] font-bold text-lg lg:text-xl hover:bg-red-600">Get Ticket</a>
+                </div>
+            </div>
+        </nav>
+    </header>
 </body>
 
 </html>
